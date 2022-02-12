@@ -1,18 +1,56 @@
 <!doctype html>
 <html>
 <head>
-  <title>규빈이 안뇽</title>
+  <title>규빈이 안뇽-2</title>
   <meta charset="utf-8">
+  <style>
+    #active {
+      color: green;
+    }
+    .saw {
+      color: gray;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 300%;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+      padding: 10px;
+    }
+    #grid ol {
+      border-right: 1px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 10px;
+      padding-left: 30px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    h2,p {
+      margin: 8px;
+      margin-left: 0px;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">게임</a></h1>
-  <ol>
-    <li><a href="1.html">컵라면</a></li>
-    <li><a href="2.html">먹고싶다</a></li>
-    <li><a href="3.html">마시썽</a></li>
-  </ol>
-  <h2>CS 잘좀먹어</h2>
-  <p>냠냠</p>
-  <p>으억</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">컵라면</a></li>
+      <li><a href="2.html" class="saw" id="active">먹고싶다</a></li>
+      <li><a href="3.html">마시썽</a></li>
+    </ol>
+    <div>
+      <h2>CS 잘좀먹어</h2>
+      <p>냠냠</p>
+      <p>으억</p>
+    </div>
+  </div>
 </body>
 </html>
